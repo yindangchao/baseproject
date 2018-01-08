@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "heyhou.com.baseproject"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:support-v4:23.0.0'
+    compile 'com.android.support:recyclerview-v7:23.2.0'
+    compile 'com.android.support:support-annotations:25.0.0'
+    //左滑退出控件
+    compile 'me.imid.swipebacklayout.lib:library:1.0.0'
+    //网络框架
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okio:okio:1.7.0'
+    //图片框架
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    //    compile 'com.github.yoojia:next-qrcode:2.0-2'
+    //七牛sdk
+    compile 'com.qiniu:qiniu-android-sdk:7.3.+'
+    compile 'com.qiniu:happy-dns:0.2.+'
+    compile files('libs/pldroid-player-1.5.1.jar')
+    //下载框架
+    compile 'com.liulishuo.filedownloader:library:1.2.1'
+    //eventbus
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //高斯效果
+    compile 'net.qiujuer.genius:blur:2.0.0-beta4'
+    //apache  http文件包
+    compile files('libs/org.apache.http.legacy.jar')
+    //gson
+    compile files('libs/gson-2.2.2.jar')
+    //数据库框架
+    compile files('libs/ormlite-android-5.0.jar')
+    compile files('libs/ormlite-core-5.0.jar')
+    // 图像剪切
+    compile 'com.edmodo:cropper:1.0.1'
+    compile('com.kevin:crop:1.0.2') {
+        // 如果已经引入 support:appcompat-v7 可以加上这句话
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    compile 'com.alibaba:fastjson:1.2.24'
+    compile files('libs/android-logging-log4j-1.0.3.jar')
+    compile files('libs/log4j-1.2.17.jar')
+    compile files('libs/ZbarManager.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+}

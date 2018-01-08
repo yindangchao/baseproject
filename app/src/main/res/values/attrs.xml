@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="CountDownTextView">
+        <attr name="CountDownTextSize" format="dimension" />
+        <attr name="CountDownTextColor" format="color" />
+        <attr name="CountDownText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ScaleRoundRectView">
+        <attr name="ScaleRoundRectSelectedColor" format="color" />
+        <attr name="ScaleRoundRectDefaultColor" format="color" />
+        <attr name="ScaleRoundRectImageWidth" format="dimension" />
+        <attr name="ScaleRoundRectImageHeight" format="dimension" />
+        <attr name="ScaleRoundRectImageRes" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SpecialEffectsSelectorButton">
+        <attr name="SpecialEffectsTouchMode">
+            <enum name="TOUCH" value="0" />
+            <enum name="SELECTOR" value="1" />
+        </attr>
+        <attr name="SpecialEffectsSelectedRes" format="reference" />
+        <attr name="SpecialEffectsDefaultRes" format="reference" />
+        <attr name="SpecialEffectsDefaultViewWidth" format="dimension" />
+        <attr name="SpecialEffectsDefaultViewHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MaxLengthEditText">
+        <attr name="MaxLengthEditTextMaxLength" format="integer" />
+        <attr name="MaxLengthEditTextShowToast" format="boolean" />
+        <attr name="MaxLengthIsCanInputLineFeed" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ExtendedListView">
+        <attr name="scrollBarPanel" format="reference" />
+        <attr name="scrollBarPanelInAnimation" format="reference" />
+        <attr name="scrollBarPanelOutAnimation" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PtrFrameLayout">
+        <!-- Optional. If you put header and content in xml, you can you these to specify name. -->
+        <attr name="ptr_header" format="reference" />
+        <attr name="ptr_content" format="reference" />
+        <attr name="ptr_content_background" format="reference" />
+        <attr name="ptr_back_start_color" format="color" />
+        <attr name="ptr_back_end_color" format="color" />
+
+        <!-- the resistance when you are moving the frame -->
+        <attr name="ptr_resistance" format="float" />
+
+        <!-- the ration of the height of the header to trigger refresh -->
+        <attr name="ptr_ratio_of_header_height_to_refresh" format="float" />
+
+        <attr name="ptr_duration_to_close" format="integer" />
+        <attr name="ptr_duration_to_close_header" format="integer" />
+
+        <!-- pull to refresh, otherwise release to refresh, default is release to refresh -->
+        <attr name="ptr_pull_to_fresh" format="boolean" />
+
+        <!-- keep header when refreshing-->
+        <attr name="ptr_keep_header_when_refresh" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PtrClassicHeader">
+        <attr name="ptr_rotate_ani_time" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="DefaultNoDataView">
+        <attr name="defaultText" format="string|reference"/>
+        <attr name="defaultTextSize" format="dimension|reference"/>
+        <attr name="defaultTextColor" format="color|reference"/>
+        <attr name="defaultImage" format="reference" />
+        <attr name="defaultImageWidth" format="dimension|reference"/>
+        <attr name="defaultImageHeight" format="dimension|reference"/>
+        <attr name="verticalSpace" format="dimension|reference"/>
+    </declare-styleable>
+
+
+</resources>
